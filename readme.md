@@ -35,4 +35,4 @@ Slide Viewer
 To view the slides, visit:
 [Continuous Integration For The Win! (slides) by Randy Syring][slides]
 
-[slides]: https://cdn.rawgit.com/continuous-integration-ftw/master/_build/slides/index.html
+[slides]: https://cdn.rawgit.com/rsyring/continuous-integration-ftw/master/_build/slides/index.html
