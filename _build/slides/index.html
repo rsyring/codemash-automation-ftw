@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Continuous Integration for the Win! &mdash; Database Testing 2015.08.01 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
+    
+    <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    
+
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2015.08.01',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/common.js"></script>
+    <script type="text/javascript" src="_static/slides.js"></script>
+    <script type="text/javascript" src="_static/sync.js"></script>
+    <script type="text/javascript" src="_static/controller.js"></script>
+    <script type="text/javascript" src="_static/init.js"></script>
+    
+    <link rel="top" title="Database Testing 2015.08.01 documentation" href="#" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  <article class="slide level-1" id="continuous-integration-for-the-win">
+<h1>Continuous Integration for the Win!</h1>
+<div class="line-block">
+<div class="line">By: Randy Syring</div>
+<div class="line">Twitter: &#64;RandySyring</div>
+<div class="line">Email: <a class="reference external" href="mailto:randy&#46;syring&#37;&#52;&#48;level12&#46;io">randy<span>&#46;</span>syring<span>&#64;</span>level12<span>&#46;</span>io</a></div>
+<div class="line"><a class="reference external" href="https://github.com/rsyring/">https://github.com/rsyring/</a></div>
+</div>
+<blockquote class="epigraph">
+<div>Relentless. Software. Craftsmanship.</div></blockquote>
+<img alt="_images/level12-logo.png" src="_images/level12-logo.png" />
+
+</article>
+<article class="slide level-2" id="introduction">
+<h2>Introduction</h2>
+<img alt="_images/level12-logo.png" class="align-right" src="_images/level12-logo.png" />
+<p>I'm the Chief Executive Developer at <a class="reference external" href="https://www.level12.io/">Level 12</a>.</p>
+<p>Level 12 is a web &amp; database development firm that uses:</p>
+<ul class="simple">
+<li>solid engineering,</li>
+<li>proactive communication, and</li>
+<li>modern development practices</li>
+</ul>
+<p>to make our customers <strong>really, really, happy.</strong></p>
+
+</article>
+<article class="slide level-2" id="why-it-matters-to-you">
+<h2>Why it Matters to You</h2>
+<ul class="simple">
+<li>Level 12 ... uses... <strong>modern development practices</strong></li>
+<li>to make <strong>our customers</strong> really, really, happy</li>
+</ul>
+<p>Net result: this works and is maintainable in the &quot;real world&quot;</p>
+
+</article>
+<article class="slide level-2" id="well-my-real-world-ymmv">
+<h2>Well, my &quot;real world&quot;, YMMV</h2>
+<ul class="simple">
+<li>Methods &amp; concepts refined over last 7 years</li>
+<li>Primarily involved in web development (11 years)</li>
+<li>Not operating <em>&quot;at scale&quot;</em></li>
+<li>Your context may differ</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="what-s-my-goal">
+<h2>What's My Goal?</h2>
+<p>To sustainably:</p>
+<ul class="simple">
+<li>Respond to change with minimal friction</li>
+<li>Frequently deliver high quality software</li>
+</ul>
+<p>(velocity &amp; quality)</p>
+
+</article>
+<article class="slide level-2" id="delivering-on-that-goal">
+<h2>Delivering on that Goal</h2>
+<p>Requires automated processes, there is no other way.</p>
+
+</article>
+<article class="slide level-2" id="our-process">
+<h2>Our Process</h2>
+<ul class="simple">
+<li>Development on Git branch (prefer small changes)</li>
+<li>PR for merge</li>
+<li>Review code</li>
+<li>Validate tests</li>
+<li>Validate code coverage</li>
+</ul>
+<p>Hard to <em>sustain</em> manually.  <a class="reference external" href="_static/gh-pr-snapshot.png">CI to the rescue</a>.</p>
+
+</article>
+<article class="slide level-2" id="more-than-a-process">
+<h2>More than a Process</h2>
+<p>It's about culture.</p>
+
+</article>
+<article class="slide level-2" id="this-presentation">
+<h2>This Presentation</h2>
+<ul class="simple">
+<li>Encouragement</li>
+<li>Technical summary of layers involved</li>
+<li>Questions</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="example-project-for-details">
+<h2>Example Project For Details</h2>
+<p><a class="reference external" href="https://github.com/rsyring/pypicalc2">https://github.com/rsyring/pypicalc2</a></p>
+
+</article>
+<article class="slide level-2" id="learning-curve-paralysis">
+<h2>Learning Curve Paralysis</h2>
+<p>Technology fatigue is real, but this is worth it.</p>
+
+</article>
+<article class="slide level-2" id="eat-the-elephant">
+<h2>Eat the Elephant</h2>
+<p>Getting CI to run correctly is often frustrating.  Rabbit holes galore.</p>
+<p>Focus on constant incremental improvements, building layer by layer.</p>
+
+</article>
+<article class="slide level-2" id="speaking-of-layers">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li><em>Tests/Linting/Coverage in a Virtual Env</em></li>
+<li>Dependencies</li>
+<li>Tox</li>
+<li>Docker</li>
+<li>CI (with Circle CI)</li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="in-virtualenv">
+<h2>In Virtualenv</h2>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">(pypicalc2)$</span> py.test pypicalc/
+<span class="go">......................................</span>
+<span class="go">38 passed in 0.12 seconds</span>
+<span class="gp">(pypicalc2)$</span> flake8 pypicalc/
+<span class="gp">(pypicalc2)$</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="with-code-coverage">
+<h2>With Code Coverage</h2>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">(pypicalc2)$</span> py.test --cov pypicalc --cov-config .coveragerc pypicalc/
+<span class="go">......................................</span>
+<span class="go">---------------------------------- coverage: platform linux, python 3.5.2-final-0 -----------------------------------</span>
+<span class="go">Name                                      Stmts   Miss Branch BrPart  Cover</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">pypicalc/app.py                              11      0      0      0   100%</span>
+<span class="go">pypicalc/cli.py                               8      0      0      0   100%</span>
+
+<span class="go">...&lt;snip&gt;...</span>
+
+<span class="go">pypicalc/tests/test_web_request_3.py         27      6      4      0    68%</span>
+<span class="go">pypicalc/tests/test_web_request_4.py         18      1      4      1    91%</span>
+<span class="go">pypicalc/version.py                           1      0      0      0   100%</span>
+<span class="go">pypicalc/views.py                            13      0      2      0   100%</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">TOTAL                                       628    102    115     19    78%</span>
+<span class="go">38 passed in 0.24 seconds</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="id1">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li><em>Dependencies</em></li>
+<li>Tox</li>
+<li>Docker</li>
+<li>CI (with Circle CI)</li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="dependencies">
+<h2>Dependencies</h2>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> tree requirements/
+<span class="go">requirements/</span>
+<span class="go">├── deployed-env.txt</span>
+<span class="go">├── dev-env.txt</span>
+<span class="go">├── includes</span>
+<span class="go">│   ├── build-only.txt</span>
+<span class="go">│   ├── ci.txt</span>
+<span class="go">│   ├── common.txt</span>
+<span class="go">│   ├── dev.txt</span>
+<span class="go">│   └── install-only.txt</span>
+<span class="go">├── wheelhouse</span>
+<span class="go">│   ├── appdirs-1.4.0-py2.py3-none-any.whl</span>
+<span class="go">│   ├── arrow-0.7.0-py3-none-any.whl</span>
+<span class="go">│   ├── ...&lt;snip&gt;...</span>
+<span class="go">└── wheelhouse-build.txt</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="id2">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li>Dependencies</li>
+<li><em>Tox</em></li>
+<li>Docker</li>
+<li>CI (with Circle CI)</li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="tox-summary">
+<h2>Tox Summary</h2>
+<ul class="simple">
+<li>Creates virtualenvs</li>
+<li>Installs dependencies from wheelhouse</li>
+<li>Runs the tests w/ coverage</li>
+<li>Runs the linter</li>
+<li>Fails with a non-zero exit code if applicable</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="tox">
+<h2>Tox</h2>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> tox
+<span class="go">py35 runtests: commands[0] | pip install -r requirements/deployed-env.txt</span>
+<span class="go">Ignoring indexes: https://pypi.python.org/simple</span>
+<span class="go">Collecting Keg (from -r requirements/includes/install-only.txt (line 1))</span>
+<span class="go">...&lt;snip&gt;...</span>
+<span class="go">Installing collected packages: MarkupSafe, Jinja2, Werkzeug, itsdangerous, Flask, appdirs, blinker, pathlib, Click, wrapt, six, BlazeUtils, SQLAlchemy,</span>
+<span class="go">...&lt;snip&gt;...</span>
+<span class="go">py35 runtests: commands[1] | py.test -c .ci/pytest.ini -ra --tb native --strict --cov pypicalc --cov-config .coveragerc --cov-report xml --no-cov-on-fail --junit-xml=/home/rsyring/projects/pypicalc2-src/.ci/test-reports/py35.pytests.xml pypicalc</span>
+<span class="go">================================================ test session starts ================================================</span>
+<span class="go">platform linux -- Python 3.5.2, pytest-2.9.1, py-1.4.31, pluggy-0.3.1</span>
+<span class="go">rootdir: /home/rsyring/projects/pypicalc2-src, inifile: .ci/pytest.ini</span>
+<span class="go">plugins: cov-2.2.1</span>
+<span class="go">collected 38 items</span>
+
+<span class="go">pypicalc/tests/test_cli.py .</span>
+<span class="go">...&lt;snip&gt;...</span>
+<span class="go">pypicalc/tests/test_web_request_4.py .</span>
+
+<span class="go">------------ generated xml file: /home/rsyring/projects/pypicalc2-src/.ci/test-reports/py35.pytests.xml -------------</span>
+<span class="go">---------------------------------- coverage: platform linux, python 3.5.2-final-0 -----------------------------------</span>
+<span class="go">Coverage XML written to file coverage.xml</span>
+<span class="go">============================================= 38 passed in 0.30 seconds =============================================</span>
+
+<span class="go">flake8 recreate: /home/rsyring/projects/pypicalc2-src/.tox/flake8</span>
+<span class="go">flake8 installdeps: flake8</span>
+<span class="go">flake8 runtests: commands[0] | flake8 pypicalc</span>
+<span class="go">______________________________________________________ summary ______________________________________________________</span>
+<span class="go">  py35: commands succeeded</span>
+<span class="go">  flake8: commands succeeded</span>
+<span class="go">  congratulations :)</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="id3">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li>Dependencies</li>
+<li>Tox</li>
+<li><em>Docker</em></li>
+<li>CI (with Circle CI)</li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="docker">
+<h2>Docker</h2>
+<p>The heart of the <tt class="code docutils literal"><span class="pre">docker-run-tests</span></tt> script:</p>
+<div class="highlight-bash"><div class="highlight"><pre>docker run <span class="se">\</span>
+    -v <span class="nv">$SRC_DPATH</span>:/opt/src <span class="se">\</span>
+    -v <span class="nv">$ARTIFACTS_DPATH</span>:/opt/src/.ci/artifacts <span class="se">\</span>
+    -v <span class="nv">$TEST_REPORTS_DPATH</span>:/opt/src/.ci/test-reports <span class="se">\</span>
+    <span class="nv">$DOCKER_FLAGS</span> <span class="se">\</span>
+    level12/python-test-multi
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="id4">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li>Dependencies</li>
+<li>Tox</li>
+<li>Docker</li>
+<li><em>CI (with Circle CI)</em></li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="ci-is-so-simple">
+<h2>CI is So Simple!! ;)</h2>
+<div class="highlight-yaml"><div class="highlight"><pre><span class="l-Scalar-Plain">machine</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">services</span><span class="p-Indicator">:</span>
+    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">docker</span>
+
+<span class="l-Scalar-Plain">test</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">override</span><span class="p-Indicator">:</span>
+    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">/home/ubuntu/$CIRCLE_PROJECT_REPONAME/docker-run-tests</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="id5">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li>Dependencies</li>
+<li>Tox</li>
+<li>Docker</li>
+<li>CI (with Circle CI)</li>
+<li><em>Code Coverage</em></li>
+<li>Service Integration (Slack, Docker)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="code-coverage-w-codecov">
+<h2>Code Coverage w/ CodeCov</h2>
+<div class="highlight-python"><div class="highlight"><pre>py.test \
+  ...&lt;snip&gt;...
+  --cov pypicalc \
+  --cov-config .coveragerc \
+  --cov-report xml \
+  --no-cov-on-fail \
+  --junit-xml={toxinidir}/.ci/test-reports/{envname}.pytests.xml \
+  pypicalc
+</pre></div>
+</div>
+<div class="highlight-console"><div class="highlight"><pre><span class="gp">$</span> ls .ci/test-reports/
+<span class="go">py35.pytests.xml</span>
+</pre></div>
+</div>
+<div class="highlight-yaml"><div class="highlight"><pre><span class="l-Scalar-Plain">deployment</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">codecov</span><span class="p-Indicator">:</span>
+    <span class="l-Scalar-Plain">branch</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/.*/</span>
+    <span class="l-Scalar-Plain">commands</span><span class="p-Indicator">:</span>
+      <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">bash &lt;(curl -s https://codecov.io/bash) -t &lt;token&gt;</span>
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-2" id="code-coverage-result">
+<h2>Code Coverage Result</h2>
+<img alt="_images/codecov-snapshot.png" class="fullpic" src="_images/codecov-snapshot.png" />
+<p><a class="reference external" href="https://codecov.io/github/rsyring/pypicalc2?branch=master">And More</a></p>
+
+</article>
+<article class="slide level-2" id="id6">
+<h2>Speaking of Layers</h2>
+<ul class="simple">
+<li>Tests/Linting/Coverage in a Virtual Env</li>
+<li>Dependencies</li>
+<li>Tox</li>
+<li>Docker</li>
+<li>CI (with Circle CI)</li>
+<li>Code Coverage</li>
+<li>Service Integration (Slack, GitHub, Email)</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="service-integration-slack">
+<h2>Service Integration: Slack</h2>
+<img alt="_images/slack-screenshot.png" class="fullpic" src="_images/slack-screenshot.png" />
+
+</article>
+<article class="slide level-2" id="service-integration-github">
+<h2>Service Integration: GitHub</h2>
+<img alt="_images/gh-pr-integration.png" class="fullpic" src="_images/gh-pr-integration.png" />
+
+</article>
+<article class="slide level-2" id="questions">
+<h2>Questions?</h2>
+<p>Thanks for attending.</p>
+<div class="line-block">
+<div class="line">By: Randy Syring</div>
+<div class="line">Twitter: &#64;RandySyring</div>
+<div class="line">Email: <a class="reference external" href="mailto:randy&#46;syring&#37;&#52;&#48;level12&#46;io">randy<span>&#46;</span>syring<span>&#64;</span>level12<span>&#46;</span>io</a></div>
+<div class="line"><a class="reference external" href="https://github.com/rsyring/">https://github.com/rsyring/</a></div>
+</div>
+<p>Image credits:</p>
+<ul class="simple">
+<li><a class="reference external" href="http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/">http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach">http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach</a></li>
+</ul>
+
+</article>
+
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>

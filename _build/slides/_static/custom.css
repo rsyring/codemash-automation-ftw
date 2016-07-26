@@ -1,0 +1,70 @@
+em {
+    color: #2B2B2B;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+q {
+    font-size: 1em;
+    margin-right: auto;
+    line-height: 1em;
+}
+
+q:after {
+    display: none;
+}
+
+.slides > article {
+    margin-left: -350px;
+    width: 1100px;
+}
+
+.slides > article.past {
+    transform: translate(-1320px);
+}
+
+.slides > article.next {
+    transform: translate(1320px);
+}
+
+
+.fullpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#continuous-integration-for-the-win .line-block {
+    margin-top: 55px;
+}
+
+
+#continuous-integration-for-the-win .epigraph {
+    position: absolute;
+    bottom: 1.5em;
+    margin: 0;
+}
+
+#continuous-integration-for-the-win img {
+    position: absolute;
+    bottom: 1.5em;
+    right: 2em;
+}
+
+#tox pre {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#prev-slide-area, #next-slide-area {
+    display: none;
+}
+
+#thanks-for-attending > p {
+    font-size: .75em;
+    position: absolute;
+    bottom: 2.5em;
+}
