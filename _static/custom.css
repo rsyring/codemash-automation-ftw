@@ -54,6 +54,10 @@ q:after {
     right: 2em;
 }
 
+#productive {
+    overflow-y: scroll;
+}
+
 #tox pre {
     overflow-y: scroll;
     height: 500px;

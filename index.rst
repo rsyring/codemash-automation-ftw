@@ -10,7 +10,7 @@ Continuous Integration for the Win!
 | https://github.com/rsyring/
 
 .. epigraph::
-    Relentless. Software. Craftsmanship.
+    Impassioned. Software. Craftsmanship.
 
 .. image:: _static/level12-logo.png
 
@@ -22,63 +22,22 @@ Introduction
 
 I'm the Chief Executive Developer at `Level 12 <https://www.level12.io/>`_.
 
-Level 12 is a web & database development firm that uses:
+Level 12 is software development firm
+specializing in web and data(base) projects tailor made for our customers.
 
-- solid engineering,
-- proactive communication, and
-- modern development practices
+Agile methodologies make our customers happy...really, really, happy.
 
-to make our customers **really, really, happy.**
+Why should you care?
 
-Why it Matters to You
-=====================
 
-- Level 12 ... uses... **modern development practices**
-- to make **our customers** really, really, happy
-
-Net result: this works and is maintainable in the "real world"
-
-Well, my "real world", YMMV
+My "real world", YMMV
 ============================
 
 - Methods & concepts refined over last 7 years
-- Primarily involved in web development (11 years)
+- Primarily involved with web & data(base) development (11 years)
 - Not operating *"at scale"*
+- These are "Best Practices" and I'm a slow adopter
 - Your context may differ
-
-
-What's My Goal?
-===============
-
-To sustainably:
-
-* Respond to change with minimal friction
-* Frequently deliver high quality software
-
-(velocity & quality)
-
-Delivering on that Goal
-=======================
-
-Requires automated processes, there is no other way.
-
-
-Our Process
-=======================
-
-* Development on Git branch (prefer small changes)
-* PR for merge
-* Review code
-* Validate tests
-* Validate code coverage
-
-Hard to *sustain* manually.  `CI to the rescue <_static/gh-pr-snapshot.png>`_.
-
-
-More than a Process
-===================
-
-It's about culture.
 
 
 This Presentation
@@ -93,6 +52,69 @@ Example Project For Details
 ===========================
 
 https://github.com/rsyring/pypicalc2
+
+My Goal?
+===============
+
+.. image:: _static/meme.jpg
+   :class: fullpic
+
+
+My Real Goal
+===============
+
+To sustainably:
+
+* Respond to change with minimal friction
+* Frequently deliver high quality software
+
+(velocity & quality)
+
+
+Delivering on that Goal
+=======================
+
+Requires **automated testing** and processes, there is no other way.
+
+
+Code Ratio
+=======================
+
+.. image:: _static/code-ratio.png
+   :class: fullpic
+
+
+Our Process
+=======================
+
+* Development on Git branch (prefer small changes)
+* PR for merge
+* Review code
+* Validate tests
+* Validate code coverage
+* 1-click deploy (TODO)
+
+Hard to *sustain* manually.
+
+
+Unproductive
+=======================
+
+.. image:: _static/pisa.jpg
+   :class: fullpic
+
+
+Productive
+=======================
+
+.. image:: _static/gh-pr-snapshot.png
+   :class: fullpic
+
+
+More than a Process
+===================
+
+It's about culture.
 
 
 Learning Curve Paralysis
@@ -118,7 +140,7 @@ Speaking of Layers
 - Docker
 - CI (with Circle CI)
 - Code Coverage
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 In Virtualenv
 =======================
@@ -165,7 +187,7 @@ Speaking of Layers
 - Docker
 - CI (with Circle CI)
 - Code Coverage
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 
 Dependencies
@@ -199,7 +221,7 @@ Speaking of Layers
 - Docker
 - CI (with Circle CI)
 - Code Coverage
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 Tox Summary
 ========================
@@ -256,7 +278,7 @@ Speaking of Layers
 - *Docker*
 - CI (with Circle CI)
 - Code Coverage
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 Docker
 =======
@@ -282,7 +304,7 @@ Speaking of Layers
 - Docker
 - *CI (with Circle CI)*
 - Code Coverage
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 
 CI is So Simple!! ;)
@@ -308,7 +330,7 @@ Speaking of Layers
 - Docker
 - CI (with Circle CI)
 - *Code Coverage*
-- Service Integration (Slack, Docker)
+- Service Integration (Slack, GitHub, Email)
 
 Code Coverage w/ CodeCov
 =========================
