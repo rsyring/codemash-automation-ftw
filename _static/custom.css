@@ -37,24 +37,24 @@ q:after {
     margin-top: 15px;
 }
 
-#continuous-integration-for-the-win .line-block {
+#automation-for-the-win .line-block {
     margin-top: 55px;
 }
 
 
-#continuous-integration-for-the-win .epigraph {
+#automation-for-the-win .epigraph {
     position: absolute;
     bottom: 1.5em;
     margin: 0;
 }
 
-#continuous-integration-for-the-win img {
+#automation-for-the-win img {
     position: absolute;
     bottom: 1.5em;
     right: 2em;
 }
 
-#productive {
+#automated-workflow {
     overflow-y: scroll;
 }
 

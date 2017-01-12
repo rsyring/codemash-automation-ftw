@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Continuous Integration for the Win! &mdash; Database Testing 2015.08.01 documentation</title>
+    <title>Automation for the Win! &mdash;  1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/styles.css" type="text/css" />
@@ -19,7 +19,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '2015.08.01',
+        VERSION:     '1.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -34,7 +34,7 @@
     <script type="text/javascript" src="_static/controller.js"></script>
     <script type="text/javascript" src="_static/init.js"></script>
     
-    <link rel="top" title="Database Testing 2015.08.01 documentation" href="#" /> 
+    <link rel="top" title=" 1.0 documentation" href="#" /> 
   </head>
   <body>
 
@@ -43,8 +43,8 @@
    class='slides layout-regular'>
 
 
-  <article class="slide level-1" id="continuous-integration-for-the-win">
-<h1>Continuous Integration for the Win!</h1>
+  <article class="slide level-1" id="automation-for-the-win">
+<h1>Automation for the Win!</h1>
 <div class="line-block">
 <div class="line">By: Randy Syring</div>
 <div class="line">Twitter: &#64;RandySyring</div>
@@ -52,8 +52,14 @@
 <div class="line"><a class="reference external" href="https://github.com/rsyring/">https://github.com/rsyring/</a></div>
 </div>
 <blockquote class="epigraph">
-<div>Impassioned. Software. Craftsmanship.</div></blockquote>
+<div>Impassioned Software Craftsmanship</div></blockquote>
 <img alt="_images/level12-logo.png" src="_images/level12-logo.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Presentation title</li>
+</ul>
+</div>
 
 </article>
 <article class="slide level-2" id="introduction">
@@ -64,17 +70,45 @@
 specializing in web and data(base) projects tailor made for our customers.</p>
 <p>Agile methodologies make our customers happy...really, really, happy.</p>
 <p>Why should you care?</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>I'm the founder of Level 12.  I've been working with databases and web applications for
+for over 15 years.</li>
+<li>I've been working directly with customers on custom projects for about 12 years.</li>
+<li>My customers aren't &quot;big players.&quot;</li>
+<li>They are generally naive about software development best practices.</li>
+<li>They generally care about our responsiveness, product quality, and cost.</li>
+<li>If we can make time for automation, it's likely you can too.</li>
+</ul>
+</div>
 
 </article>
 <article class="slide level-2" id="my-real-world-ymmv">
 <h2>My &quot;real world&quot;, YMMV</h2>
 <ul class="simple">
-<li>Methods &amp; concepts refined over last 7 years</li>
-<li>Primarily involved with web &amp; data(base) development (11 years)</li>
+<li>Methods &amp; concepts refined over last 8 years</li>
+<li>Primarily involved with web &amp; data(base) development</li>
 <li>Not operating <em>&quot;at scale&quot;</em></li>
 <li>These are &quot;Best Practices&quot; and I'm a slow adopter</li>
-<li>Your context may differ</li>
+<li>Your context will differ, that's ok!</li>
 </ul>
+
+</article>
+<article class="slide level-2" id="what-s-your-real-world">
+<h2>What's your real world?</h2>
+<ul class="build simple">
+<li>Developer, QA, Management, or ?</li>
+<li>Full or multi-stack developers?</li>
+<li>Small business, medium business, enterprise, mammoth?</li>
+<li>Have solid automated testing and processes in place?</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>BUILD!!</li>
+</ul>
+</div>
 
 </article>
 <article class="slide level-2" id="this-presentation">
@@ -84,16 +118,53 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 <li>Technical summary of layers involved</li>
 <li>Questions</li>
 </ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>NOT going to show in-depth config or coding</li>
+<li>I really would like interaction</li>
+<li>If you are one of those people that loves to answer questions, wait about 4 seconds and then
+feel free to hop in.  If I ask a question, it's probably not rhetorical.</li>
+<li>If it was meant to be rhetorical, I might make fun of you a little, but...don't worry...
+I promise it's not personal.</li>
+<li>Seriously, I want to get the thinking juices going.  Please speak up.</li>
+<li>If you stump me, you can all laugh a bit, and don't worry, I won't take it personal.</li>
+</ul>
+</div>
 
 </article>
-<article class="slide level-2" id="example-project-for-details">
-<h2>Example Project For Details</h2>
-<p><a class="reference external" href="https://github.com/rsyring/pypicalc2">https://github.com/rsyring/pypicalc2</a></p>
+<article class="slide level-2" id="learning-curve-paralysis">
+<h2>Learning Curve Paralysis</h2>
+<p>Technology fatigue is real, but this is worth it.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>technology fatigue is worst when?</li>
+<li>Yes, at conferences!!!</li>
+<li>Who has attended conferences before?  How many things do you actually follow up on?</li>
+<li>One piece of advice: take one thing away from this conference that you will act on, maybe two.</li>
+<li>This really, really, really is worth it.</li>
+</ul>
+</div>
 
 </article>
 <article class="slide level-2" id="my-goal">
 <h2>My Goal?</h2>
 <img alt="_images/meme.jpg" class="fullpic" src="_images/meme.jpg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>NO!</li>
+<li>I'm not on an automation bandwagon.</li>
+<li>I have a long-term goals that dictate the necessity of automation.</li>
+<li>But before I tell you more....</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="what-s-your-goal">
+<h2>What's Your Goal?</h2>
+<p>Seriously, what is/are the guiding principle(s) that govern how you build software?</p>
 
 </article>
 <article class="slide level-2" id="my-real-goal">
@@ -101,61 +172,345 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 <p>To sustainably:</p>
 <ul class="simple">
 <li>Respond to change with minimal friction</li>
-<li>Frequently deliver high quality software</li>
+<li>Frequently deliver highly functional software</li>
 </ul>
-<p>(velocity &amp; quality)</p>
+<hr class="docutils" />
+<p>Four components: flexibility, velocity, quality, &amp; cost</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Find the four components in the goal.</li>
+<li>Where is the tension?</li>
+<li>What is this?  Yes, Agile.</li>
+<li>Quick question: is Scrum agile?  Is Agile scrum?</li>
+<li>Agile is not Scrum, I'm sorry if Scrum or any other agile methodology has been a bad experience
+for you.</li>
+<li>Agile is a set of principles, Google Agile Manifesto for more info.</li>
+<li>My goal is a distillation of the principles listed in the Agile Manifesto.</li>
+<li>Remember the title of this talk.  This is my win!</li>
+<li>Agree or Strongly Agree that this is a noble goal for just about any development team?</li>
+</ul>
+</div>
 
 </article>
 <article class="slide level-2" id="delivering-on-that-goal">
 <h2>Delivering on that Goal</h2>
-<p>Requires <strong>automated testing</strong> and processes, there is no other way.</p>
+<p>Without heavy use of automated processes, especially testing, a truly agile workflow is impossible.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>&quot;truly agile workflow&quot; --&gt; my goal</li>
+<li>Survey: generally agrees, generally disagrees, maybe</li>
+<li>Note that there are two components that need to be automated: testing and processes</li>
+</ul>
+</div>
 
 </article>
-<article class="slide level-2" id="diminishing-returns">
-<h2>Diminishing Returns</h2>
-<img alt="_images/roi-graph.png" class="fullpic" src="_images/roi-graph.png" />
+<article class="slide level-2" id="let-s-talk-about-tests">
+<h2>Let's talk about Tests!</h2>
+<ul class="build simple">
+<li>Are you testing your code?</li>
+<li>Do you have automated tests for your code?</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>BUILD!!</li>
+<li>How much of your time is spent testing functionality vs writing code?</li>
+<li>If no, why?</li>
+<li>If yes, % of production code covered by tests?</li>
+<li>If yes, who writes those automated tests: developers or dedicated QA peeps?</li>
+</ul>
+</div>
 
 </article>
-<article class="slide level-2" id="code-ratio">
-<h2>Code Ratio</h2>
+<article class="slide level-2" id="developers-need-to-write-tests">
+<h2>Developers Need to Write Tests</h2>
+<p>If developers are not creating automated tests in parallel with the production code, a truly
+agile workflow is unsustainable.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Frequently deliver <em>highly functional software</em></li>
+<li>Highly functional software requires testing be done.</li>
+<li>Most developers will manually test some of their code, but that's not enough to satisfy my
+goal.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="reasons">
+<h2>Reasons</h2>
+<ul class="simple">
+<li>Quick iterations and frequent changes cause bugs.</li>
+<li>If you want high-quality software, you have to test for and fix bugs.</li>
+<li>As code volume and complexity grows over time, it becomes impossible to
+manually verify all functionality.</li>
+<li>Without automation, the effort expended testing is wasted.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Respond to change with minimal friction and frequently deliver highly functional software</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="manual-testing-is-unsustainable">
+<h2>Manual Testing is Unsustainable</h2>
 <img alt="_images/code-ratio.png" class="fullpic" src="_images/code-ratio.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>How hard is it to manually test just the new functionality or bug fixes?</li>
+<li>How much regression testing can be done?</li>
+<li>If you have QA staff for this, is it reasonable to expect them to cover all the old
+functionality?</li>
+<li>Over time, regression testing will cover less and less code or the testing will just stop
+being done.</li>
+</ul>
+</div>
 
 </article>
-<article class="slide level-2" id="our-process">
-<h2>Our Process</h2>
+<article class="slide level-2" id="manual-testing-is-a-losing-battle">
+<h2>Manual Testing is a Losing Battle</h2>
+<img alt="_images/pisa.jpg" class="fullpic" src="_images/pisa.jpg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>This is unsustainable</li>
+<li>Remember my goal: To sustainably respond to change with minimal friction and frequently deliver
+highly functional software</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="testing-asset-or-expense">
+<h2>Testing: Asset or Expense</h2>
+<ul class="simple">
+<li>Manual testing is an expense</li>
+<li>Automated testing is mostly an asset, with maintenance related expenses</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="automated-testing-saves-time">
+<h2>Automated Testing Saves Time</h2>
+<p>No...really.</p>
+<p>In both the short-term and the long-term.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Why don't you test...it takes too much time.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="i-don-t-need-no-stink-n-tests">
+<h2>I Don't Need No Stink'n Tests</h2>
+<img alt="_images/simple-form.png" class="fullpic" src="_images/simple-form.png" />
+
+</article>
+<article class="slide level-2" id="i-don-t-need-ummm-help">
+<h2>I Don't...Need....ummm...help?</h2>
+<img alt="_images/complex-form.jpeg" class="fullpic" src="_images/complex-form.jpeg" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Yes, this is a little self-serving, we don't see that many forms that look like this.</li>
+<li>But, doesn't the complexity of the software we are building more often resemble this example?</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="time-savings-overall">
+<h2>Time Savings Overall</h2>
+<img alt="_images/roi-graph.png" class="fullpic" src="_images/roi-graph.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Does manual testing really get done thoroughly?  We've already said that's unlikely.</li>
+<li>But I believe the graph still holds true because as software matures, if manual testing is
+relied upon, the software development process becomes increasingly brittle and error prone,
+slowing down developers, and forcing the organization to invest lots of time into manually
+ensuring the software is not broken.</li>
+<li>That can affect developers, QA staff, management, and customers as releases are delayed and
+even simple changes take months to get released.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="a-final-plea">
+<h2>A Final Plea</h2>
+<ul class="simple">
+<li>Manual testing is not sustainable, code quality will continually decrease as complexity increases.</li>
+<li>You are already testing, capture the value!</li>
+<li>Use devs for what they are good at (writing code to deal with repetition)</li>
+<li>Use QA peeps for what they are good at (break it!, UI/UX, non-repetitive)</li>
+<li>Just get started.  An object at rest...</li>
+<li>Keep at it, it will become natural</li>
+</ul>
+
+</article>
+<article class="slide level-2" id="ci-without-automated-tests">
+<h2>CI without Automated Tests</h2>
+<p>Neutered.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>If you don't have a quality test suite in place, start with that.</li>
+<li>We operated for years with automated tests that ran on the dev's machine (not CI)</li>
+<li>Your largest ROI will be in building the test suite, I can't really emphasize that enough.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="i-practice-what-i-preach">
+<h2>I Practice What I Preach</h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&nbsp;</th>
+<th class="head">Proj A</th>
+<th class="head">Proj B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Age</td>
+<td>6+ years</td>
+<td>1.5 years</td>
+</tr>
+<tr class="row-odd"><td>Python Tests</td>
+<td>8,294</td>
+<td>1,444</td>
+</tr>
+<tr class="row-even"><td>JS Tests</td>
+<td>309</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>DB Tables</td>
+<td>200+</td>
+<td>35+</td>
+</tr>
+<tr class="row-even"><td>Python LoC</td>
+<td>145K</td>
+<td>26.5K</td>
+</tr>
+<tr class="row-odd"><td>Python Test LoC</td>
+<td>61K (42%)</td>
+<td>14.7K (55%)</td>
+</tr>
+<tr class="row-even"><td>Code Coverage</td>
+<td>95%</td>
+<td>96%</td>
+</tr>
+<tr class="row-odd"><td>Test Time</td>
+<td>39:04 (/4)</td>
+<td>6:58</td>
+</tr>
+</tbody>
+</table>
+<p>Release interval: whenever (multiple times per day if needed)</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>This isn't bragging, I just want to show you that it is doable.</li>
+<li>I also want to give you some stats.</li>
+<li>Notice the % LOC.  Who thinks the % LOC seems like a waste?</li>
+<li>Anyone part of a 6 year project without automated tests?  How often are your releases and how
+confident are you that you are not breaking things?</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="delivering-on-my-goal-ci">
+<h2>Delivering on my Goal (CI)</h2>
+<p>Without heavy use of automated processes, especially testing, a truly agile workflow is impossible.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>To sustainable respond to change with minimal friction and frequently deliver highly
+functional software.</li>
+<li>And I'm arguing that that the statement above is true.</li>
+<li>I've talked about the testing part, but now I'm switching focus to process and CI in particular.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="our-development-workflow">
+<h2>Our Development Workflow</h2>
 <ul class="simple">
 <li>Development on Git branch (prefer small changes)</li>
 <li>PR for merge</li>
-<li>Review code</li>
-<li>Validate tests</li>
+<li>Review code diff</li>
+<li>Validate all tests pass</li>
+<li>Validate linting</li>
 <li>Validate code coverage</li>
-<li>1-click deploy (TODO)</li>
+<li>Some changes require manual QA</li>
 </ul>
-<p>Hard to <em>sustain</em> manually.</p>
 
 </article>
-<article class="slide level-2" id="unproductive">
-<h2>Unproductive</h2>
-<img alt="_images/pisa.jpg" class="fullpic" src="_images/pisa.jpg" />
+<article class="slide level-2" id="workflow-execution-without-automation">
+<h2>Workflow Execution without Automation</h2>
+<p>How likely is it that workflow will get executed for every commit if not automated?</p>
 
 </article>
-<article class="slide level-2" id="productive">
-<h2>Productive</h2>
+<article class="slide level-2" id="id1">
+<h2>Delivering on that Goal</h2>
+<p>Delivering on my goal: requires <strong>automated testing and processes</strong>, there is no other way.</p>
+<p>Impossible to sustain manually!s</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>To sustainable respond to change with minimal friction and frequently deliver highly
+functional software.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="workflow-review">
+<h2>Workflow Review</h2>
+<ul class="simple">
+<li>Development on Git branch (prefer small changes)</li>
+<li>PR for merge</li>
+<li>Review code diff</li>
+<li>Validate all tests pass</li>
+<li>Validate linting</li>
+<li>Validate code coverage</li>
+<li>Some changes require manual QA</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Takes a good bit of work to do this manually.</li>
+<li>Corners are likely to get cut.</li>
+</ul>
+</div>
+
+</article>
+<article class="slide level-2" id="automated-workflow">
+<h2>Automated Workflow</h2>
 <img alt="_images/gh-pr-snapshot.png" class="fullpic" src="_images/gh-pr-snapshot.png" />
 
 </article>
 <article class="slide level-2" id="more-than-a-process">
 <h2>More than a Process</h2>
 <p>It's about culture.</p>
+<p>Leadership needs to reinforce culture.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Enforce it or don't do it.</li>
+<li>Invest in making important things easy.</li>
+</ul>
+</div>
 
 </article>
-<article class="slide level-2" id="learning-curve-paralysis">
-<h2>Learning Curve Paralysis</h2>
-<p>Technology fatigue is real, but this is worth it.</p>
-
-</article>
-<article class="slide level-2" id="eat-the-elephant">
-<h2>Eat the Elephant</h2>
+<article class="slide level-2" id="ci-eat-the-elephant">
+<h2>CI: Eat the Elephant</h2>
 <p>Getting CI to run correctly is often frustrating.  Rabbit holes galore.</p>
 <p>Focus on constant incremental improvements, building layer by layer.</p>
 
@@ -207,7 +562,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 
 </article>
-<article class="slide level-2" id="id1">
+<article class="slide level-2" id="id2">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -241,7 +596,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 
 </article>
-<article class="slide level-2" id="id2">
+<article class="slide level-2" id="id3">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -301,7 +656,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 
 </article>
-<article class="slide level-2" id="id3">
+<article class="slide level-2" id="id4">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -327,7 +682,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 
 </article>
-<article class="slide level-2" id="id4">
+<article class="slide level-2" id="id5">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -353,7 +708,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 
 </article>
-<article class="slide level-2" id="id5">
+<article class="slide level-2" id="id6">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -397,7 +752,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 <p><a class="reference external" href="https://codecov.io/github/rsyring/pypicalc2?branch=master">And More</a></p>
 
 </article>
-<article class="slide level-2" id="id6">
+<article class="slide level-2" id="id7">
 <h2>Speaking of Layers</h2>
 <ul class="simple">
 <li>Tests/Linting/Coverage in a Virtual Env</li>
@@ -406,7 +761,7 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 <li>Docker</li>
 <li>CI (with Circle CI)</li>
 <li>Code Coverage</li>
-<li>Service Integration (Slack, GitHub, Email)</li>
+<li><em>Service Integration (Slack, GitHub, Email)</em></li>
 </ul>
 
 </article>
@@ -431,8 +786,9 @@ specializing in web and data(base) projects tailor made for our customers.</p>
 </div>
 <p>Image credits:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/">http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/</a></li>
-<li><a class="reference external" href="http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach">http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach</a></li>
+<li><a class="reference external" href="http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/">Image Credit</a></li>
+<li><a class="reference external" href="http://www.slideshare.net/lfingerman/test-automation-best-prcatices-with-soa-test-approach">Image Credit 2</a></li>
+<li><a class="reference external" href="http://reqtest.com/testing-blog/you-cant-work-agile-without-automated-testing/">Example Project</a></li>
 </ul>
 
 </article>
