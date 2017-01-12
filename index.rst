@@ -109,7 +109,7 @@ My Goal?
 .. note::
   - NO!
   - I'm not on an automation bandwagon.
-  - I have a long-term goals that dictate the necessity of automation.
+  - I have long-term goals that dictate the necessity of automation.
   - But before I tell you more....
 
 What's Your Goal?
@@ -118,8 +118,8 @@ What's Your Goal?
 Seriously, what is/are the guiding principle(s) that govern how you build software?
 
 
-My Real Goal
-===============
+My Software Development Goal
+============================
 
 To sustainably:
 
@@ -145,12 +145,13 @@ Four components: flexibility, velocity, quality, & cost
 Delivering on that Goal
 =======================
 
-Without heavy use of automated processes, especially testing, a truly agile workflow is impossible.
+`assert`: Without heavy use of automated processes, especially testing, a truly agile workflow
+is impossible.
 
 .. note::
   - "truly agile workflow" --> my goal
-  - Survey: generally agrees, generally disagrees, maybe
   - Note that there are two components that need to be automated: testing and processes
+  - The rest of this presentation is my attempt to convince you that this assertion is sound.
 
 
 Let's talk about Tests!
@@ -158,7 +159,7 @@ Let's talk about Tests!
 
 .. rst-class:: build
 
-- Are you testing your code?
+- Are you usually testing your code?
 - Do you have automated tests for your code?
 
 .. note::
@@ -172,7 +173,7 @@ Let's talk about Tests!
 Developers Need to Write Tests
 ==============================
 
-If developers are not creating automated tests in parallel with the production code, a truly
+`assert`: If developers are not creating automated tests in parallel with the production code, a truly
 agile workflow is unsustainable.
 
 
@@ -349,7 +350,7 @@ Our Development Workflow
 * Validate code coverage
 * Some changes require manual QA
 
-.. note:
+.. note::
   - Does this seem reasonable?
   - Will this contribute significantly to my goal?
   - Do you do this?
@@ -360,7 +361,7 @@ Workflow Execution without Automation
 
 How likely is it that workflow will get executed for every commit if not automated?
 
-.. note:
+.. note::
   - I've never met a developer that likes manual and repetitive tasks.
   - If he or she can't automate it, they will usually find a way to stop doing it.
 
@@ -370,7 +371,7 @@ Delivering on that Goal
 
 Delivering on my goal: requires **automated testing and processes**, there is no other way.
 
-Impossible to sustain manually!s
+Impossible to sustain manually!
 
 .. note::
   - To sustainable respond to change with minimal friction and frequently deliver highly
@@ -390,7 +391,7 @@ Workflow Review
 
 .. note::
   - Takes a good bit of work to do this manually.
-  - Corners are likely to get cut.
+  - How long to do this manually?
 
 
 Automated Workflow
@@ -399,17 +400,19 @@ Automated Workflow
 .. image:: _static/gh-pr-snapshot.png
    :class: fullpic
 
+.. note::
+  - My dev's have no excuse for not following our workflow guidelines.
+
 
 More than a Process
 ===================
 
 It's about culture.
 
-Leadership needs to reinforce culture.
-
 .. note::
+  - Good development practices are enforced through automation.
   - Enforce it or don't do it.
-  - Invest in making important things easy.
+  - Leadership: invest in making important things easy.
 
 
 CI: Eat the Elephant
