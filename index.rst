@@ -77,6 +77,13 @@ Delivering on that Goal
 Requires **automated testing** and processes, there is no other way.
 
 
+Diminishing Returns
+=======================
+
+.. image:: _static/roi-graph.png
+   :class: fullpic
+
+
 Code Ratio
 =======================
 
